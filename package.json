@@ -1,0 +1,38 @@
+{
+  "name": "jacs--repo",
+  "version": "1.0.0",
+  "description": "**Members:** \r - Jun-del S. Patuasic\r * Andrian S. Balberos\r + Christopher Aron P. Abao\r - Shekainah P. Gaceta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaoski/JACS--repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abaoski/JACS--repo/issues"
+  },
+  "homepage": "https://github.com/abaoski/JACS--repo#readme",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "@types/pg": "^8.11.11",
+    "express": "^4.21.2",
+    "pg": "^8.14.1",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "nodemon": "^3.1.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  }
+}
