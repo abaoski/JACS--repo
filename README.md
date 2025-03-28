@@ -1,4 +1,4 @@
-# IT-INTPROG32- 16543 JACS REPOSITORY 
+# IT-INTPROG32- 16543 user-management-api
 **Members:** 
 - Jun-del S. Patuasic
 * Andrian S. Balberos
