@@ -4,10 +4,8 @@
   "description": "**Members:** \r - Jun-del S. Patuasic\r * Andrian S. Balberos\r + Christopher Aron P. Abao\r - Shekainah P. Gaceta",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -28,6 +26,7 @@
     "mysql2": "^3.14.0",
     "pg": "^8.14.1",
     "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
     "typeorm": "^0.3.21"
   },
   "devDependencies": {
@@ -35,7 +34,6 @@
     "@typescript-eslint/parser": "^8.28.0",
     "eslint": "^9.23.0",
     "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
   }
