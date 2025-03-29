@@ -13,4 +13,18 @@ router.post("/users", async (req, res) => {
     return res.status(201).json(newUser);
 });
 
+router.delete("/users/:id", async (req, res) => {
+    const userRepository = getRepository(User);
+    const { id } = req.params;
+
+    const user = await userRepository.findOne({ where: { id: Number(id) } });
+    if (!user) {
+        return res.status(404).json({ message: "User not found" });
+    }
+
+    await userRepository.remove(user);
+    return res.status(200).json({ message: "User deleted successfully" });
+});
+
+
 export default router;
