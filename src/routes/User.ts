@@ -1,19 +1,16 @@
-import express from 'express';
-import { User } from '../entities/user';
-import { getRepository } from 'typeorm';
+import { Router } from "express";
+import { getRepository } from "typeorm";
+import { User } from "../entities/User";
 
-const router = express.Router();
+const router = Router();
 
-router.post('/users', async (req, res) => {
-  try {
+router.post("/users", async (req, res) => {
     const userRepository = getRepository(User);
-    const newUser = userRepository.create(req.body);
+    const { name, email } = req.body;
+
+    const newUser = userRepository.create({ name, email });
     await userRepository.save(newUser);
-    
-    res.status(201).json(newUser);
-  } catch (error) {
-    res.status(500).json({ message: 'Error creating user' });
-  }
+    return res.status(201).json(newUser);
 });
 
 export default router;
