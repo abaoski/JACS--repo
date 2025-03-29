@@ -25,6 +25,4 @@ router.delete("/users/:id", async (req, res) => {
     await userRepository.remove(user);
     return res.status(200).json({ message: "User deleted successfully" });
 });
-
-
 export default router;
