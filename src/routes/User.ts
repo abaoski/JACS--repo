@@ -13,6 +13,7 @@ router.post("/users", async (req, res) => {
     return res.status(201).json(newUser);
 });
 
+//Add User Deletion Functionality
 router.delete("/users/:id", async (req, res) => {
     const userRepository = getRepository(User);
     const { id } = req.params;
