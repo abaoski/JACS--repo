@@ -38,6 +38,8 @@
 - This API serves to retrieve a user in the database.
   > ![image](https://github.com/user-attachments/assets/a4e10247-b76c-446b-a4c3-bb6b7600baef)
 ## RUN TEST IN YOUR COMPUTER TOO!
+- If you ran into a problem, just follow the [Instruction](https://github.com/abaoski/user-management-api/edit/main/README.md#instruction) gain.
+# HAPPY CODING! <3
 
 
 
