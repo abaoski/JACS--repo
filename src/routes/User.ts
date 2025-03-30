@@ -25,4 +25,16 @@ router.delete("/users/:id", async (req, res) => {
     await userRepository.remove(user);
     return res.status(200).json({ message: "User deleted successfully" });
 });
+
+router.get("/users", async (req, res) => {
+    try {
+        const userRepository = getRepository(User);
+        const users = await userRepository.find();
+        
+        return res.status(200).json(users);
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        return res.status(500).json({ message: "Error retrieving users", error: error.message });
+    }
+});
 export default router;
